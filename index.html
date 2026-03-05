@@ -1,12 +1,103 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>EMA Test Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Electronic Music Australia</title>
+  <meta name="description" content="Electronic Music Australia — spotlighting Australian artists across all electronic music genres." />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Optional: nicer font, safe to remove -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Electronic Music Australia</h1>
-  <p>This is a Cloudflare Pages test.</p>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="header">
+      <!-- Option A (recommended): upload logo to /images/ema-logo.png and use this -->
+      <img class="logo" src="images/ema-logo.png" alt="Electronic Music Australia (EMA) logo" />
+
+      <!-- Option B: if you don't want to upload an image yet, comment the line above and use this instead:
+      <img class="logo" src="https://static.wixstatic.com/media/e5be9a_9ea47bf4c6cc49a88937d40961dbff9d~mv2.png/v1/crop/x_0%2Cy_257%2Cw_1080%2Ch_569/fill/w_358%2Ch_184%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/EMA%20LOGO.png"
+           alt="Electronic Music Australia (EMA) logo" />
+      -->
+    </header>
+
+    <section class="card">
+      <h1>Electronic Music Australia</h1>
+      <p class="lead">About Us</p>
+
+      <div class="prose">
+        <p>
+          From humble beginnings, Australia’s electronic music scene exploded to the forefront of dance music culture,
+          turning it into the juggernaut it is today. Aussie exports are some of the biggest and brightest electronic music
+          acts in the world, influencing global trends. With a vast array of talent working their way through to get their
+          music heard, the Australian electronic music scene shows no sign of slowing down.
+        </p>
+
+        <p>
+          Electronic Music Australia has been created to put the spotlight on Australian artists across all electronic music genres,
+          past present and beyond.
+        </p>
+
+        <p>
+          It provides a platform for Australian artists to be featured and for audiences to discover new and upcoming Aussie talent.
+        </p>
+
+        <p>
+          Whether it’s showcasing the hottest up-and-coming club bangers or remembering veterans of the industry who have been providing
+          the soundtrack to sweaty dance floors and raves of the past, EMA aims to deliver a range of sounds including Indie Dance,
+          House and DnB, all the way down to the depths of the underground.
+        </p>
+
+        <p>
+          If you’re after a snapshot of what is happening in Australia's electronic music scene, keen to listen to different genres and artists,
+          and want to help build an even stronger Australian electronic music community, you’ve come to the right place.
+        </p>
+
+        <p>
+          Electronic Music Australia airs every Tuesday at 11pm AEST on <a href="https://radiometro.com.au" target="_blank" rel="noopener">105.7 Radio Metro</a>.
+          Join host Ky Mi for a journey through the sounds of Electronic Music Australia and support our incredible homegrown artists into the future!
+          Check out the weekly blog, catch up on past episodes, and access exclusive content by subscribing to the EMA mailing list.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Listen</h2>
+        <p class="muted">Tracks from the EMA SoundCloud.</p>
+      </div>
+
+      <div class="player-wrap">
+        <iframe
+          title="Electronic Music Australia SoundCloud tracks"
+          width="100%"
+          height="560"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/electronicmusicau/tracks&color=%23ffffff&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+      </div>
+
+      <div class="small-note">
+        If the player doesn’t load for someone, it’s usually an ad/tracker blocker. The page still works fine.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Electronic Music Australia.</div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
